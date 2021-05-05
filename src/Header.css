@@ -17,9 +17,9 @@
 
 .header_searchIcon {
     padding: 5px;
-    height: 27px  !important;
+    height: 22px  !important;
     background-color: #cd9042;
-    border-radius: 1px;
+    border-radius: 2px;
 }
 
 .header_search {
@@ -30,8 +30,8 @@
 }
 
 .header_searchInput {
-    height: 20px;
-    padding: 13px;
+    height: 12px;
+    padding: 10px;
     border: none;
     width: 100%;
     border-radius: 2px;
