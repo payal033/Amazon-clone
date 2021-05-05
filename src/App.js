@@ -6,7 +6,6 @@ import Checkout from './components/Checkout';
 
 function App() {
   return (
-    // BEM
     <Router>
       <div className="app">
         <Switch>
@@ -17,6 +16,9 @@ function App() {
           <Route exact path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route exact path='/login'>
+            <h2>Login Page</h2>
           </Route>
         </Switch>
       </div>
