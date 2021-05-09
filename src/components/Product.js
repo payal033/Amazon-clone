@@ -1,12 +1,18 @@
 import React from 'react'
 import "../Product.css"
 import { useStateValue } from '../StateProvider';
+import { Bounce, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+
+toast.configure()
 function Product({id, title, image, price, rating}) {
 
   const [{ basket }, dispatch] = useStateValue()
 
   // console.log("This is the basket", basket)
+
+  
 
   const addToBasket = () => {
     // dispathc the item in data layer
@@ -20,6 +26,20 @@ function Product({id, title, image, price, rating}) {
         rating: rating
       }
     })
+
+    
+
+    toast.dark(`${title} has been added successfully ✔ `, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      transition: Bounce,
+      newestOnTop: true
+    });
   }
 
     return (
