@@ -15,28 +15,28 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
     }
 
     return (
-        <div className='checkoutProduct'>
-            <img src={image} alt={title} className='checkoutProduct_image' />
+      <div className="checkoutProduct">
+        <img src={image} alt={title} className="checkoutProduct_image" />
 
-            <div className="checkoutProduct_info">
-                <p className='checkoutProduct_title'>{title}</p>
-                <p className="checkoutProduct_price">
-                    <small>$</small>
-                    <strong>{price}</strong>
-                </p>
-                <div className="checkoutProduct_rating">
-                    {
-                        Array(rating).fill().map((_, i) => (
-                            <p>🌟</p>
-                        ))
-                    }
-                </div>
-                {!hideButton && (
-                         <button onClick={removeFromBasket}>Remove from Basket</button>
-                )}
-            </div>
+        <div className="checkoutProduct_info">
+          <p className="checkoutProduct_title">{title}</p>
+          <p className="checkoutProduct_price">
+            <small> &#8377;</small>
+            <strong>{price}</strong>
+          </p>
+          <div className="checkoutProduct_rating">
+            {Array(rating)
+              .fill()
+              .map((_, i) => (
+                <p>🌟</p>
+              ))}
+          </div>
+          {!hideButton && (
+            <button onClick={removeFromBasket}>Remove from Basket</button>
+          )}
         </div>
-    )
+      </div>
+    );
 }
 
 export default CheckoutProduct
