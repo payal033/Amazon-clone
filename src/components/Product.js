@@ -12,8 +12,6 @@ function Product({id, title, image, price, rating}) {
 
   // console.log("This is the basket", basket)
 
-  
-
   const addToBasket = () => {
     // dispathc the item in data layer
     dispatch({
@@ -26,8 +24,6 @@ function Product({id, title, image, price, rating}) {
         rating: rating
       }
     })
-
-    
 
     toast.dark(`${title} has been added successfully ✔ `, {
       position: "top-right",
