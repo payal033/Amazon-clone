@@ -3,14 +3,13 @@
 import firebase from 'firebase'
 
 const firebaseConfig = {
-  // Paste your firebase config file here
-  apiKey: "YOUR_API_kEY",
+  apiKey: "YOUR-API-KEY",
   authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "583583",
-  appId: "542:web:5459cc5978a6e49a81c77f",
-  measurementId: "G-LQ4WT",
+  projectId: "clon",
+  storageBucket: "clon",
+  messagingSenderId: "58358",
+  appId: "1:5459cc5978a6e49a81c77f",
+  measurementId: "G-L",
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig)
